@@ -7,6 +7,9 @@ available [here](https://bastian.rieck.me/about/cv.pdf)). Since it is
 mostly geared towards an academic CV, this repository contains [an
 example](CV.pdf).
 
+If you find this template useful, I would love to hear about it. Drop me
+a line using a communication channel of your choice.
+
 ## Using the template
 
 Rename `CV.tex` to whatever you deem appropriate and edit the file.
