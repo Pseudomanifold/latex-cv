@@ -63,8 +63,11 @@
 
 \usepackage{marginnote}
 \renewcommand*{\raggedleftmarginnote}{}
-\reversemarginpar
-\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\newcommand{\years}[1]{%
+  % Forces notes to appear on the left
+  {\reversemarginpar\strut\marginnote{{\small#1}}}%
+}
+
 
 % Required to support footnote references; has to come *after* the
 % `marginnote` package, though, because it redefines some things.
@@ -151,26 +154,29 @@ Cosmology \textbullet{} Astrophysics \textbullet{} Mathematics
 \section*{Education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\years{1927} \textbf{Ph.D.}\ in physics at MIT\\[.1cm]
-\years{} \emph{The gravitational field in a fluid sphere of uniform invariant density according to the theory of relativity}\\[.05cm]
-\years{} Advisor: Arthur Eddington
-\years{1920} \textbf{D.Sc.}\ in mathematics at Catholic University of Leuven\\[.1cm]
-\years{} \emph{l'Approximation des fonctions de plusieurs variables réelles}\\[.05cm]
-\years{} Advisor: Charles de la Vallée-Poussin\\[0.2cm]
-\years{1911--1914} Studies of civil engineering at Catholic University of Leuven
+\years{1927}%
+\textbf{Ph.D.}\ in physics at MIT\\[.1cm]
+\emph{The gravitational field in a fluid sphere of uniform invariant density according to the theory of relativity}\\[.05cm]
+Advisor: Arthur Eddington
+\years{1920}%
+\textbf{D.Sc.}\ in mathematics at Catholic University of Leuven\\[.1cm]
+\emph{l'Approximation des fonctions de plusieurs variables réelles}\\[.05cm]
+Advisor: Charles de la Vallée-Poussin\\[0.2cm]
+\years{1911--1914}%
+Studies of civil engineering at Catholic University of Leuven
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Publications}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\years{1946}
+\years{1946}%
 %
 G.\ Lemaître, The Primeval Atom --- An Essay on Cosmogony\\[.2cm]
 %
-\years{1931}
+\years{1931}%
 G.\ Lemaître, L'Hypothèse de l'atome primitif\\[.2cm]
 %
-\years{1927}
+\years{1927}%
 %
 G.\ Lemaître, \emph{Un univers homogène de masse constante et de rayon
 croissant rendant compte de la vitesse radiale des nébuleuses
@@ -182,19 +188,22 @@ G.\ Lemaître, Discussion sur l'évolution de l'univers
 \section*{Honours}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\years{1953} Received the inaugural \emph{Eddington Medal}, awarded
+\years{1953}%
+Received the inaugural \emph{Eddington Medal}, awarded
 by the Royal Astronomical Society\\[.2cm]
 %
-\years{1950}
+\years{1950}%
 %
 Received the decennial prize for applied sciences for the period
 1933--1942 by the Belgian government\\[.2cm]
 %
-\years{1936} Received the \emph{Prix Jules Janssen}, the highest
+\years{1936}%
+Received the \emph{Prix Jules Janssen}, the highest
 award of the Société astronomique de France\footnote{The French
 astronomical society}\\[.2cm]
 %
-\years{1934} Received the \emph{Francqui Prize}, the highest Belgian
+\years{1934}%
+Received the \emph{Francqui Prize}, the highest Belgian
 scientific distinction, from King Leopold III, proposed by Albert
 Einstein, Charles de la Vallée-Poussin, and Alexandre de Hemptinne\\[.2cm]
 %
