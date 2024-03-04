@@ -10,6 +10,11 @@ example](CV.pdf).
 If you find this template useful, I would love to hear about it. Drop me
 a line using a communication channel of your choice.
 
+Here is a list of users of the template:
+
+- [Dr. Corey Stephan](https://github.com/historical-theology/cv) did
+  a great extension of the template for the humanities.
+
 ## Using the template
 
 Rename `CV.tex` to whatever you deem appropriate and edit the file.
